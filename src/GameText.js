@@ -1,13 +1,11 @@
 import React from 'react';
 
-//title and "select correct color"
-function GameText(props) {
-  const { colors, selectedColor } = props;
+function GameText({ colors, selectedColor }) {
   return (
-    <div>
-      <h3>Select the correct color square: {colors[selectedColor]}</h3>
+    <div className="gametext">
+      <h1>Select the correct color square: {colors[selectedColor]}</h1>
     </div>
   );
 }
 
-export default GameText
+export default GameText;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import GameText from './GameText';
-import ColorSquares from './ColorSquares'
+import ColorSwatches from './ColorSwatches'
+import Result from './Result'
 import PlayAgain from './PlayAgain';
 
 function App() {
@@ -47,11 +48,9 @@ function App() {
 
   return (
     <div className="App">
-      <GameText />
-
-      <ColorSquares colors={colors} handleColorClick={handleColorClick} />
-      
-      <div className="result">{result}</div>
+      <ColorSwatches colors={colors} handleColorClick={handleColorClick} />
+      <GameText colors={colors} selectedColor={selectedColor}/>
+      <Result result={result}/>
       <PlayAgain onClick={handlePlayAgain}/>
     </div>
   );

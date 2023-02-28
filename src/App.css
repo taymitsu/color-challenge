@@ -4,9 +4,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.color-squares {
+.colorSwatches {
   display: flex;
 }
 
@@ -19,9 +20,10 @@
 
 .result {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
-.gameSelect{
-  margin: 13px;
+.gametext > h1 {
+  font-size: 26px;
 }
